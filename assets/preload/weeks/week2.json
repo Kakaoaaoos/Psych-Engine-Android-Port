@@ -4,9 +4,18 @@
 			"Decaying",
 			"Larry",
 			[
-				20,
-				20,
-				30
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"me",
+			"toiletpaper",
+			[
+				146,
+				113,
+				253
 			]
 		]
 	],
@@ -25,6 +34,6 @@
 		253
 	],
 	"hideStoryMode": true,
-	"weekBefore": "tutorial",
+	"weekBefore": "",
 	"startUnlocked": true
 }
