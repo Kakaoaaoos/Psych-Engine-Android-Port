@@ -26,18 +26,20 @@ class StageData {
 		} else if(SONG.song != null) {
 			switch (SONG.song.toLowerCase().replace(' ', '-'))
 			{
-				case 'terminated':
-					stage = 'larrybg';
-				case 'vivisection':
-					stage = 'doctorbg';
-				case 'captivated':
-					stage = 'captivated';
-				case 'my-world'':
-					stage = 'gocbg';
-				case 'decaying':
-					stage = 'gocbg';
-				case 'me':
-					stage = 'toiletbg';
+				case 'spookeez' | 'south' | 'monster':
+					stage = 'spooky';
+				case 'pico' | 'blammed' | 'philly' | 'philly-nice':
+					stage = 'philly';
+				case 'milf' | 'satin-panties' | 'high':
+					stage = 'limo';
+				case 'cocoa' | 'eggnog':
+					stage = 'mall';
+				case 'winter-horrorland':
+					stage = 'mallEvil';
+				case 'senpai' | 'roses':
+					stage = 'school';
+				case 'thorns':
+					stage = 'schoolEvil';
 				default:
 					stage = 'stage';
 			}
@@ -67,4 +69,3 @@ class StageData {
 		return cast Json.parse(rawJson);
 	}
 }
-				

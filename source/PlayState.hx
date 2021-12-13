@@ -321,19 +321,21 @@ class PlayState extends MusicBeatState
 		if(PlayState.SONG.stage == null || PlayState.SONG.stage.length < 1) {
 			switch (songName)
 			{
-				case 'terminated':
-					curStage = 'larrybg';
-				case 'vivisection':
-					curStage = 'doctorbg';
-				case 'captivated'':
-					curStage = 'captivated';
-				case 'my-world':
-					curStage = 'gocbg';
-				case 'decaying':
-					curStage = 'gocbg';
-				case 'me':
-					curStage = 'toiletbg';
-				 default:
+				case 'spookeez' | 'south' | 'monster':
+					curStage = 'spooky';
+				case 'pico' | 'blammed' | 'philly' | 'philly-nice':
+					curStage = 'philly';
+				case 'milf' | 'satin-panties' | 'high':
+					curStage = 'limo';
+				case 'cocoa' | 'eggnog':
+					curStage = 'mall';
+				case 'winter-horrorland':
+					curStage = 'mallEvil';
+				case 'senpai' | 'roses':
+					curStage = 'school';
+				case 'thorns':
+					curStage = 'schoolEvil';
+				default:
 					curStage = 'stage';
 			}
 		}
@@ -1035,12 +1037,7 @@ class PlayState extends MusicBeatState
 					if(daSong == 'roses') FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 				default:
-					if (dialogueJson == null)
-						startCountdown();
-					else
-					{
-                        startDialogue(dialogueJson);
-					}
+					startCountdown();
 			}
 			seenCutscene = true;
 		} else {
@@ -4078,4 +4075,3 @@ class PlayState extends MusicBeatState
 	var curLight:Int = 0;
 	var curLightEvent:Int = 0;
 }
-				
