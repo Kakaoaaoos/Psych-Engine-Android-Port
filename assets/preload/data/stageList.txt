@@ -6,8 +6,3 @@ mall
 mallEvil
 school
 schoolEvil
-captivated
-doctorbg
-gocbg
-larrybg
-toiletbg
